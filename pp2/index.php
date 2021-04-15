@@ -22,9 +22,11 @@ error_reporting(E_ALL);
 <body>
 <h1>Pair Program 2</h1>
 <?php
-echo "PHP Array Practice";
+echo "PHP Array Practice <br>";
 
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
+
+printArr($numbers);
 
 function printArr($array) {
     for ($i = 0; $i < count($array); $i++){
