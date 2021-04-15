@@ -24,7 +24,13 @@ error_reporting(E_ALL);
 <?php
 echo "PHP Array Practice";
 
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
 
+function printArr($array) {
+    for ($i = 0; $i < count($array); $i++){
+        echo $array[$i] . "<br>";
+    }
+}
 ?>
 </body>
 </html>
