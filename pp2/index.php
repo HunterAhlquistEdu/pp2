@@ -9,6 +9,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+require("functions.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -28,11 +30,7 @@ $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
 printArr($numbers);
 
-function printArr($array) {
-    for ($i = 0; $i < count($array); $i++){
-        echo $array[$i] . "<br>";
-    }
-}
+
 ?>
 </body>
 </html>
