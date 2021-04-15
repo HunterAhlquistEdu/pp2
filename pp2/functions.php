@@ -4,3 +4,13 @@ function printArr($array) {
         echo $array[$i] . "<br>";
     }
 }
+
+function largest($array) {
+    $largest = -INF;
+    foreach ($array as $n){
+        if ($n > $largest) {
+            $largest = $n;
+        }
+    }
+    return $largest;
+}
