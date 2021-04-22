@@ -1,17 +1,3 @@
-<?php
-/**
- * Hunter Ahlquist
- * 4/15/21
- * index.php
- * Pair Program 2
- */
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-require("functions.php");
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,19 +7,28 @@ require("functions.php");
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pair Program 2</title>
 </head>
+<header>
+    <!--
+    David Pavlenko
+    4/15/21
+    http://dpavlenko.greenriverdev.com/328/pp2/
+    Pair Program 2
+    -->
+    <?php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+    ?>
+</header>
 <body>
-<h1>Pair Program 2</h1>
-<?php
-echo "PHP Array Practice <br>";
+    <p>PHP Array Practice
+        <?php
+        include "functions.php";
+        $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
-$numbers = array(7, 9, 8, 9, 8, 8, 6);
-
-printArr($numbers);
-
-echo "Largest number: " . largest($numbers);
-?>
+        printArr($numbers);
+        largest($numbers);
+        removeDups($numbers);
+        ?>
+    </p>
 </body>
 </html>
-
-
-
